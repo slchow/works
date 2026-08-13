@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional | Sarah Chow</title>
+<meta name="description" content="Professional and academic presentations and writing by Sarah Chow, including her work as communications editor for Cesium.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+    --navy:#16324a;
+    --navy-light:#24486a;
+    --gold:#c8963e;
+    --cream:#faf8f4;
+    --paper:#ffffff;
+    --ink:#23303d;
+    --muted:#667085;
+    --accent:#1f3a5f;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Source Sans Pro', sans-serif;color:var(--ink);background:var(--cream);line-height:1.7;}
+h1,h2,h3,.logo{font-family:'Playfair Display', serif;}
+a{color:inherit;}
+.container{width:90%;max-width:1180px;margin:0 auto;}
+
+nav{background:var(--navy);position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.15);}
+nav .container{display:flex;justify-content:space-between;align-items:center;padding:18px 0;}
+.logo{color:#fff;font-size:1.5rem;font-weight:700;text-decoration:none;}
+.nav-toggle{display:none;background:none;border:none;color:#fff;font-size:1.6rem;cursor:pointer;}
+.nav-links{display:flex;gap:30px;align-items:center;}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-weight:600;font-size:.95rem;transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
+
+.page-hero{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;padding:70px 0;text-align:center;}
+.page-hero h1{font-size:2.6rem;margin-bottom:14px;}
+.page-hero p{max-width:680px;margin:0 auto;color:#dbe6f0;font-size:1.08rem;}
+.accent-bar{height:6px;background:var(--accent);}
+
+section{padding:70px 0;}
+.section-intro{color:var(--muted);max-width:760px;margin-bottom:10px;font-size:1.02rem;}
+.disclosure{color:var(--muted);font-size:.86rem;margin-bottom:44px;font-style:italic;max-width:760px;}
+
+.insp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:16px;}
+.insp-card{display:flex;gap:14px;background:var(--paper);border-radius:8px;padding:14px;box-shadow:0 2px 10px rgba(0,0,0,.05);transition:box-shadow .2s,transform .2s;}
+.insp-card:hover{box-shadow:0 8px 22px rgba(0,0,0,.09);transform:translateY(-2px);}
+
+.cover-thumb{flex:0 0 66px;width:66px;height:88px;border-radius:4px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:8px 3px;color:#fff;text-align:center;box-shadow:0 3px 8px rgba(0,0,0,.18),inset 0 0 0 1px rgba(255,255,255,.15);position:relative;background:linear-gradient(160deg,#1f3a5f,#0a1830);}
+.cover-thumb .mag-name{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:.85rem;line-height:1.05;}
+.cover-thumb .mag-date{font-size:.55rem;letter-spacing:.3px;text-transform:uppercase;opacity:.9;}
+
+.insp-body{flex:1;display:flex;flex-direction:column;justify-content:center;min-width:0;}
+.insp-body h3{font-size:.98rem;color:var(--navy);margin-bottom:4px;line-height:1.3;font-family:'Source Sans Pro',sans-serif;font-weight:700;}
+.insp-body a.insp-link{text-decoration:none;color:var(--navy);border-bottom:1px solid transparent;}
+.insp-body a.insp-link:hover{color:var(--accent);border-color:var(--accent);}
+.insp-type{font-size:.76rem;color:var(--muted);font-style:italic;display:block;margin-bottom:2px;}
+.insp-meta{font-size:.78rem;color:var(--muted);}
+.no-link{font-size:.82rem;color:var(--muted);font-style:italic;}
+
+footer{background:#0d1a26;color:#cfd8e0;padding:50px 0 30px;text-align:center;}
+footer .footer-links{margin-bottom:18px;}
+footer .footer-links a{color:var(--gold);text-decoration:none;margin:0 14px;font-weight:600;font-size:.92rem;}
+footer p{font-size:.85rem;color:#8a97a4;}
+
+@media(max-width:768px){
+  .page-hero h1{font-size:2rem;}
+  .nav-links{position:fixed;top:64px;left:0;right:0;background:var(--navy);flex-direction:column;padding:20px 0;gap:0;display:none;}
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:12px 24px;width:100%;}
+  .nav-toggle{display:block;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">Sarah Chow</a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="biography.html">Biographies</a>
+      <a href="professional.html" class="active">Professional</a>
+      <a href="entertainment.html">Entertainment</a>
+      <a href="inspirational.html">Inspirational</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+<div class="accent-bar"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Professional</h1>
+    <p>Since 2015, Sarah has served as communications editor for Cesium, the open-source platform for 3D geospatial data. She writes user stories, company news, and event coverage for the Cesium Blog, and has presented at industry conferences including FOSS4G NA.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p class="section-intro">A selection of Sarah's bylined work on the Cesium Blog and conference presentations, in reverse chronological order.</p>
+    <p class="disclosure">The Cesium Blog's archive spans over a decade and loads older posts via an interactive "Load more" control that can't be paginated automatically. This list reflects the articles that could be located and verified; it is a strong sample rather than a complete archive.</p>
+
+    <div class="insp-grid">
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">May 2026</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2026/05/20/bringing-earth-to-the-treadmill-with-cesium/" target="_blank" rel="noopener">Bringing Earth to the Treadmill with Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; May 20, 2026</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Apr 2026</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2026/04/30/geotour-showcases-crete-with-cesiumjs/" target="_blank" rel="noopener">Geotour Showcases Crete with Synchronized Panoramas and Video in CesiumJS</a></h3><span class="insp-meta">Cesium Blog &middot; April 30, 2026</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Apr 2026</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2026/04/09/orbit-codex-tracks-artemis-ii-in-cesiumjs/" target="_blank" rel="noopener">Orbit Codex Tracks Flight of Artemis II in CesiumJS</a></h3><span class="insp-meta">Cesium Blog &middot; April 9, 2026</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Mar 2026</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2026/03/12/cesium-powers-camptocamps-geo-challenge-game/" target="_blank" rel="noopener">Cesium Powers Camptocamp's Geo Challenge Game</a></h3><span class="insp-meta">Cesium Blog &middot; March 12, 2026</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Feb 2026</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2026/02/26/creating-xr-connection-to-e1-with-cesium/" target="_blank" rel="noopener">Creating an XR Connection to the E1 Series with Cesium for Unreal</a></h3><span class="insp-meta">Cesium Blog &middot; February 26, 2026</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Feb 2026</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2026/02/04/mountaineering-routes-in-cesiumjs-with-trailamo/" target="_blank" rel="noopener">Planning Mountaineering Routes in CesiumJS with Trailamo</a></h3><span class="insp-meta">Cesium Blog &middot; February 4, 2026</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Jan 2026</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2026/01/15/blenheim-palace-smart-conservation-with-cesium/" target="_blank" rel="noopener">Blenheim Palace Performing Smart Conservation with Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; January 15, 2026</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Dec 2025</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2025/12/02/vcs-advocates-open-source-for-urban-digital-twins/" target="_blank" rel="noopener">Virtual City Systems Advocates Open Source for Urban Digital Twins</a></h3><span class="insp-meta">Cesium Blog &middot; December 2, 2025</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Nov 2025</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2025/11/10/forensic-rock-accelerates-accident-reconstruction/" target="_blank" rel="noopener">Forensic Rock Accelerates Accident Reconstruction with Google Photorealistic 3D Tiles</a></h3><span class="insp-meta">Cesium Blog &middot; November 10, 2025</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Oct 2025</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2025/10/21/with-cesium-players-fly-the-world-in-glider-sim/" target="_blank" rel="noopener">Glider Sim Players Fly the World with Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; October 21, 2025</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Nov 2022</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2022/11/22/mathworks-visualizing-aerospace-simulations-with-cesiumjs/" target="_blank" rel="noopener">MathWorks Visualizing Aerospace Simulations with CesiumJS</a></h3><span class="insp-meta">Cesium Blog &middot; November 22, 2022</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Nov 2022</span></div>
+        <div class="insp-body"><span class="insp-type">Cesium Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2022/11/15/major-japanese-newspaper-using-cesium-stories-ukraine/" target="_blank" rel="noopener">Major Japanese Newspaper Using Cesium Stories to Report on the War in Ukraine</a></h3><span class="insp-meta">Cesium Blog &middot; November 15, 2022</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Jul 2022</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2022/07/27/oneplan-and-cesium-delivering-geospatial-for-events/" target="_blank" rel="noopener">OnePlan and Cesium Delivering Geospatial for Events</a></h3><span class="insp-meta">Cesium Blog &middot; July 27, 2022</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Jul 2022</span></div>
+        <div class="insp-body"><span class="insp-type">Blog Post</span><h3><a class="insp-link" href="https://cesium.com/blog/2022/07/12/cesiumjs-10-years-of-open-source/" target="_blank" rel="noopener">CesiumJS: 10 Years of Open Source</a></h3><span class="insp-meta">Cesium Blog &middot; July 12, 2022</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Mar 2022</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://www.cesium.com/blog/2022/03/22/compare-hundreds-of-scenarios-in-cesium-with-guru/" target="_blank" rel="noopener">Compare Hundreds of Scenarios in Cesium with GURU Universal Interface for Simulation</a></h3><span class="insp-meta">Cesium Blog &middot; March 22, 2022</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Mar 2022</span></div>
+        <div class="insp-body"><span class="insp-type">Cesium Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2022/03/08/cesium-story-depicts-damage-in-ukraine/" target="_blank" rel="noopener">Cesium Story Depicts Damage in Ukraine</a></h3><span class="insp-meta">Cesium Blog &middot; March 8, 2022</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Feb 2022</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2022/02/15/cae-simulates-a-complex-dense-urban-environment/" target="_blank" rel="noopener">CAE Simulates Complex Dense Urban Environments with Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; February 15, 2022</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Feb 2022</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2022/02/11/cesium-supporting-state-sized-digital-twins/" target="_blank" rel="noopener">Cesium Supporting State-Sized Digital Twins</a></h3><span class="insp-meta">Cesium Blog &middot; February 11, 2022</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Dec 2021</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2021/12/06/geofs-is-a-flight-simulator-that-showcases-global-satellite/" target="_blank" rel="noopener">Incredible Graphics Development in CesiumJS with GeoFS</a></h3><span class="insp-meta">Cesium Blog &middot; December 6, 2021</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Nov 2021</span></div>
+        <div class="insp-body"><span class="insp-type">Blog Post</span><h3><a class="insp-link" href="https://cesium.com/blog/2021/11/08/building-the-open-metaverse-open-standards-governance/" target="_blank" rel="noopener">Building the Open Metaverse: Open Standards Governance</a></h3><span class="insp-meta">Cesium Blog &middot; November 8, 2021</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Nov 2021</span></div>
+        <div class="insp-body"><span class="insp-type">Blog Post</span><h3><a class="insp-link" href="https://cesium.com/blog/2021/11/01/podcast-what-is-the-metaverse/" target="_blank" rel="noopener">Building the Open Metaverse: What is the Metaverse?</a></h3><span class="insp-meta">Cesium Blog &middot; November 1, 2021</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Aug 2021</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2021/08/26/digital-twins-of-golf-resorts-in-cesium/" target="_blank" rel="noopener">Reality Maps Builds Digital Twins of Golf Resorts in Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; August 26, 2021</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Aug 2021</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2021/08/05/ims-monitoring-networks-at-remote-mines-with-cesium/" target="_blank" rel="noopener">IMS Monitoring Networks at Remote Mines with Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; August 5, 2021</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Jun 2021</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2021/06/02/skydios-newest-autonomous-drone-software-brings-cesium/" target="_blank" rel="noopener">Skydio's Newest Autonomous Drone Software Brings Cesium to the Field</a></h3><span class="insp-meta">Cesium Blog &middot; June 2, 2021</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Mar 2021</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2021/03/18/iaea-tracking-sea-water-radiation-in-cesium/" target="_blank" rel="noopener">IAEA Tracking Radioactivity in Seawater in Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; March 18, 2021</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Jan 2021</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2021/01/25/sky-drones/" target="_blank" rel="noopener">Cesium Supporting Remote Drone Operations and Unmanned Traffic Management with Sky-Drones</a></h3><span class="insp-meta">Cesium Blog &middot; January 25, 2021</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Nov 2020</span></div>
+        <div class="insp-body"><span class="insp-type">Integration</span><h3><a class="insp-link" href="https://cesium.com/blog/2020/11/02/imodeljs-supports-cesium-ion-assets/" target="_blank" rel="noopener">Create Digital Twins with Cesium ion and Bentley's iModel.js</a></h3><span class="insp-meta">Cesium Blog &middot; November 2, 2020</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">May 2020</span></div>
+        <div class="insp-body"><span class="insp-type">Blog Post</span><h3><a class="insp-link" href="https://cesium.com/blog/2020/05/21/one-million-cesiumjs-downloads" target="_blank" rel="noopener">CesiumJS Downloaded More than 1 Million Times</a></h3><span class="insp-meta">Cesium Blog &middot; May 21, 2020</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Mar 2020</span></div>
+        <div class="insp-body"><span class="insp-type">Cesium Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2020/03/27/our-extreme-earth/" target="_blank" rel="noopener">Homeschooling with Cesium Stories</a></h3><span class="insp-meta">Cesium Blog &middot; March 27, 2020</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Nov 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/11/25/edgygeo-tools-for-real-estate/" target="_blank" rel="noopener">EdgyGeo Gives Realtors an Edge with Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; November 25, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Nov 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/11/08/usplm-drone-fleets/" target="_blank" rel="noopener">UsPLM Manages Drone Fleets More Accurately and Safely with Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; November 8, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Aug 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/08/28/smart-city-explorer/" target="_blank" rel="noopener">Simulation, Planning, and Visualization for City Development with Smart City Explorer Web Platform</a></h3><span class="insp-meta">Cesium Blog &middot; August 28, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Jul 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/07/17/data61-building-australia-national-digital-twin/" target="_blank" rel="noopener">Data61 Building Australia's National Digital Twin with Cesium</a></h3><span class="insp-meta">Cesium Blog &middot; July 17, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Jun 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/06/07/nokia-si-suite/" target="_blank" rel="noopener">Nokia SI Suite: A Platform for Advanced Analytics Applications</a></h3><span class="insp-meta">Cesium Blog &middot; June 7, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">May 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/05/22/flight-review/" target="_blank" rel="noopener">Replay Drone Flights in 3D with Flight Review</a></h3><span class="insp-meta">Cesium Blog &middot; May 22, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">May 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/05/22/where-were-they/" target="_blank" rel="noopener">Where Were They? Tracking World War I Voyages of Royal Navy Vessels</a></h3><span class="insp-meta">Cesium Blog &middot; May 22, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">May 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/05/03/trendspek/" target="_blank" rel="noopener">Trendspek: Transforming How Physical Assets are Managed through Automation and Drone Technology</a></h3><span class="insp-meta">Cesium Blog &middot; May 3, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Apr 2019</span></div>
+        <div class="insp-body"><span class="insp-type">Conference Presentation</span><h3><a class="insp-link" href="https://cesium.com/learn/presentations/#foss4g-2019-drones" target="_blank" rel="noopener">Harnessing the Potential of Drone Data Capture with Cesium</a></h3><span class="insp-meta">FOSS4G NA &middot; April 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Feb 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/02/28/zurich-3d" target="_blank" rel="noopener">Digital Twin of Z&uuml;rich, Switzerland with Detailed Buildings for Desktop and Mobile</a></h3><span class="insp-meta">Cesium Blog &middot; February 28, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Feb 2019</span></div>
+        <div class="insp-body"><span class="insp-type">Blog Post</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/02/06/khronie-award/" target="_blank" rel="noopener">We Won an Award for Our Work on Open Standards</a></h3><span class="insp-meta">Cesium Blog &middot; February 6, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Jan 2019</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2019/01/23/resource-watch/" target="_blank" rel="noopener">Visualize the State of the Planet with Timely Datasets on Resource Watch</a></h3><span class="insp-meta">Cesium Blog &middot; January 23, 2019</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Dec 2018</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2018/12/12/wasatch-backcountry-skiing-map/" target="_blank" rel="noopener">Improving Communication between Backcountry Skiers, the Utah Avalanche Center, and Public Safety Agencies</a></h3><span class="insp-meta">Cesium Blog &middot; December 12, 2018</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Aug 2018</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2018/08/21/cybercity/" target="_blank" rel="noopener">CyberCity 3D: High-Resolution Streaming Smart 3D Buildings</a></h3><span class="insp-meta">Cesium Blog &middot; August 21, 2018</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">May 2018</span></div>
+        <div class="insp-body"><span class="insp-type">Conference Presentation</span><h3>The Road to 200,000 Downloads: The Cesium Story</h3><span class="insp-meta">FOSS4G NA &middot; May 2018</span><br><span class="no-link">No public recording available</span></div>
+      </div>
+
+      <div class="insp-card">
+        <div class="cover-thumb"><span class="mag-name">Cesium</span><span class="mag-date">Apr 2018</span></div>
+        <div class="insp-body"><span class="insp-type">User Story</span><h3><a class="insp-link" href="https://cesium.com/blog/2018/04/04/cesium-world-terrain-new-zealand/" target="_blank" rel="noopener">Outdoor Adventure in New Zealand with Cesium World Terrain</a></h3><span class="insp-meta">Cesium Blog &middot; April 4, 2018</span></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="biography.html">Biographies</a>
+      <a href="professional.html">Professional</a>
+      <a href="entertainment.html">Entertainment</a>
+      <a href="inspirational.html">Inspirational</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2026 Sarah Chow &middot; Editor &amp; Writer</p>
+  </div>
+</footer>
+
+</body>
+</html>

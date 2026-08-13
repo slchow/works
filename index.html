@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sarah Chow | Editor &amp; Writer</title>
+<meta name="description" content="Sarah Chow is a professional editor and writer specializing in personal history editing, self-publishing guidance, and editorial services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+    --navy:#16324a;
+    --navy-light:#24486a;
+    --gold:#c8963e;
+    --cream:#faf8f4;
+    --paper:#ffffff;
+    --ink:#23303d;
+    --muted:#667085;
+    --bio:#7c2d3c;
+    --prof:#1f3a5f;
+    --ent:#3d6b5c;
+    --insp:#b4802f;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Source Sans Pro', sans-serif;
+    color:var(--ink);
+    background:var(--cream);
+    line-height:1.7;
+}
+h1,h2,h3,.logo{font-family:'Playfair Display', serif;}
+a{color:inherit;}
+.container{width:90%;max-width:1180px;margin:0 auto;}
+img{max-width:100%;display:block;}
+
+nav{background:var(--navy);position:sticky;top:0;z-index:1000;box-shadow:0 2px 12px rgba(0,0,0,.15);}
+nav .container{display:flex;justify-content:space-between;align-items:center;padding:18px 0;}
+.logo{color:#fff;font-size:1.5rem;font-weight:700;text-decoration:none;letter-spacing:.3px;}
+.nav-toggle{display:none;background:none;border:none;color:#fff;font-size:1.6rem;cursor:pointer;}
+.nav-links{display:flex;gap:30px;align-items:center;}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none;font-weight:600;font-size:.95rem;transition:color .2s;}
+.nav-links a:hover,.nav-links a.active{color:var(--gold);}
+
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;padding:90px 0;}
+.hero .container{display:flex;align-items:center;gap:60px;flex-wrap:wrap;}
+.hero-text{flex:1;min-width:320px;}
+.hero-text h1{font-size:3rem;line-height:1.15;margin-bottom:18px;}
+.hero-text h2{font-weight:400;font-size:1.25rem;color:#d9e4ee;margin-bottom:26px;}
+.hero-text p{font-size:1.08rem;margin-bottom:34px;max-width:560px;color:#e8eef4;}
+.hero-monogram{flex:0 0 auto;width:230px;height:230px;border-radius:50%;border:5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:5.2rem;font-weight:700;color:var(--gold);background:rgba(255,255,255,.04);margin:auto;box-shadow:0 20px 40px rgba(0,0,0,.3);}
+
+.btn{display:inline-block;background:var(--gold);color:var(--navy);padding:14px 30px;border-radius:4px;text-decoration:none;font-weight:700;margin-right:14px;margin-top:6px;transition:background .2s;}
+.btn:hover{background:#fff;}
+.btn-outline{border:2px solid #fff;color:#fff;background:transparent;padding:12px 28px;}
+.btn-outline:hover{background:#fff;color:var(--navy);}
+
+section{padding:85px 0;}
+.section-title{font-size:2.2rem;color:var(--navy);margin-bottom:16px;}
+.section-intro{color:var(--muted);max-width:720px;margin-bottom:46px;font-size:1.05rem;}
+.about{background:var(--paper);}
+.about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:50px;align-items:start;}
+.about-text p{margin-bottom:20px;font-size:1.06rem;color:var(--ink);}
+.pull-quote{background:var(--cream);border-left:4px solid var(--gold);padding:26px 28px;font-family:'Playfair Display',serif;font-style:italic;font-size:1.15rem;color:var(--navy);}
+
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;}
+.card{background:var(--paper);padding:30px;border-radius:8px;box-shadow:0 5px 20px rgba(0,0,0,.06);}
+.card h3{color:var(--navy);margin-bottom:12px;font-size:1.15rem;}
+.card p{color:var(--muted);font-size:.96rem;}
+
+.cat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px;}
+.cat-tile{background:var(--paper);border-radius:8px;overflow:hidden;text-decoration:none;box-shadow:0 5px 20px rgba(0,0,0,.07);transition:transform .2s;display:block;}
+.cat-tile:hover{transform:translateY(-5px);}
+.cat-bar{height:8px;}
+.cat-body{padding:28px 26px;}
+.cat-body h3{font-size:1.3rem;margin-bottom:8px;}
+.cat-body p{color:var(--muted);font-size:.92rem;margin-bottom:14px;}
+.cat-count{font-size:.8rem;text-transform:uppercase;letter-spacing:.6px;font-weight:700;color:var(--gold);}
+
+.timeline{background:var(--paper);}
+.timeline-item{border-left:4px solid var(--navy);padding:4px 0 4px 26px;margin-bottom:30px;position:relative;}
+.timeline-item h3{color:var(--navy);font-size:1.1rem;margin-bottom:4px;}
+.timeline-item span{color:var(--muted);font-weight:600;font-size:.88rem;}
+.timeline-item p{margin-top:6px;font-size:.95rem;color:var(--ink);}
+.edu-box{background:var(--cream);border-radius:8px;padding:24px 26px;margin-top:10px;}
+.edu-box h4{color:var(--navy);margin-bottom:6px;font-size:1rem;}
+.edu-box p{font-size:.92rem;color:var(--muted);margin-bottom:10px;}
+
+.cta{background:linear-gradient(135deg,var(--navy),var(--navy-light));color:#fff;text-align:center;}
+.cta h2{color:#fff;}
+.cta p{max-width:600px;margin:0 auto 34px;color:#dbe6f0;font-size:1.08rem;}
+
+footer{background:#0d1a26;color:#cfd8e0;padding:50px 0 30px;text-align:center;}
+footer .footer-links{margin-bottom:18px;}
+footer .footer-links a{color:var(--gold);text-decoration:none;margin:0 14px;font-weight:600;font-size:.92rem;}
+footer p{font-size:.85rem;color:#8a97a4;}
+
+@media(max-width:768px){
+  .hero-text h1{font-size:2.1rem;}
+  .nav-links{position:fixed;top:64px;left:0;right:0;background:var(--navy);flex-direction:column;padding:20px 0;gap:0;display:none;}
+  .nav-links.open{display:flex;}
+  .nav-links a{padding:12px 24px;width:100%;}
+  .nav-toggle{display:block;}
+  .about-grid{grid-template-columns:1fr;}
+  .hero .container{flex-direction:column-reverse;text-align:center;}
+  .hero-text p{margin-left:auto;margin-right:auto;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">Sarah Chow</a>
+    <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')">&#9776;</button>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="biography.html">Biographies</a>
+      <a href="professional.html">Professional</a>
+      <a href="entertainment.html">Entertainment</a>
+      <a href="inspirational.html">Inspirational</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-text">
+      <h1>Editing That Honors the Story.<br>Writing That Reaches People.</h1>
+      <h2>Editor &amp; Writer &middot; Personal History Specialist &middot; 15+ Years in Communications</h2>
+      <p>I'm Sarah Chow. I help people turn their life stories into books worth keeping, and I write and edit across academic, technical, and inspirational publishing. Explore the work below to see how I might help with yours.</p>
+      <a href="#publications" class="btn">See My Work</a>
+      <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+    </div>
+    <div class="hero-monogram">SC</div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I have a master's degree in English and Rhetoric and an undergraduate degree in English with a minor in Editing, both from Brigham Young University. I've worked in communications for over fifteen years &mdash; as an editor at academic and trade publishers, and as a writer and marketer in the tech sector.</p>
+        <p>As an editor, I'm passionate about realizing the potential in others' writing. Everyone should feel confident their writing will be understood as intended, and no great idea should be cloaked by stilted prose. On the side, I've helped a number of friends and family self-publish their life stories for their loved ones.</p>
+        <p>Your life story is a gift to the future. The effort you put into writing your personal history will be appreciated more than you know, and I love helping people print their stories so they can be preserved and shared.</p>
+      </div>
+      <div class="pull-quote">
+        "No great ideas should be cloaked by stilted writing. Everyone deserves to feel confident their story will be understood exactly as intended."
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <h2 class="section-title">What I Do</h2>
+    <p class="section-intro">From a first rough draft to a finished, printed book &mdash; and everything in between.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Personal History Editing</h3>
+        <p>Guiding individuals through writing, editing, and self-publishing their life stories, from first draft to finished book.</p>
+      </div>
+      <div class="card">
+        <h3>Developmental &amp; Copy Editing</h3>
+        <p>Content-level feedback on structure, tone, and organization, followed by meticulous line editing for grammar and clarity.</p>
+      </div>
+      <div class="card">
+        <h3>Book Design &amp; Typesetting</h3>
+        <p>Full interior layout and cover design in Adobe InDesign, prepared for print or ebook release.</p>
+      </div>
+      <div class="card">
+        <h3>Self-Publishing Guidance</h3>
+        <p>Coordinating quotes, proofs, and print orders with vendors like Blurb, and preparing ebooks for Amazon.</p>
+      </div>
+      <div class="card">
+        <h3>Academic &amp; Business Editing</h3>
+        <p>Copyediting dissertations, white papers, grant applications, and technical documentation across fields.</p>
+      </div>
+      <div class="card">
+        <h3>Magazine &amp; Editorial Writing</h3>
+        <p>Author of dozens of stories, interviews, and essays for Friend, New Era, and Ensign/Liahona magazines.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications" style="background:var(--paper);">
+  <div class="container">
+    <h2 class="section-title">Publications</h2>
+    <p class="section-intro">A look at the range of Sarah's published and edited work, organized by category.</p>
+    <div class="cat-grid">
+      <a class="cat-tile" href="biography.html">
+        <div class="cat-bar" style="background:var(--bio);"></div>
+        <div class="cat-body">
+          <h3>Biographies</h3>
+          <p>Personal histories, memoirs, and autobiographies edited and brought to print for individuals and families.</p>
+        </div>
+      </a>
+      <a class="cat-tile" href="professional.html">
+        <div class="cat-bar" style="background:var(--prof);"></div>
+        <div class="cat-body">
+          <h3>Professional</h3>
+          <p>User stories, company news, and conference presentations from Sarah's decade-plus career in technical and open-source communications.</p>
+        </div>
+      </a>
+      <a class="cat-tile" href="entertainment.html">
+        <div class="cat-bar" style="background:var(--ent);"></div>
+        <div class="cat-body">
+          <h3>Entertainment</h3>
+          <p>Published fiction and essays, including a fairy-tale anthology and Tolkien scholarship.</p>
+        </div>
+      </a>
+      <a class="cat-tile" href="inspirational.html">
+        <div class="cat-bar" style="background:var(--insp);"></div>
+        <div class="cat-body">
+          <h3>Inspirational</h3>
+          <p>Stories, interviews, and essays written for Friend, New Era, and Ensign/Liahona magazines since 2008.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="timeline">
+  <div class="container">
+    <h2 class="section-title">Career Highlights</h2>
+    <div class="timeline-item">
+      <h3>Communications, Cesium (Freelance)</h3>
+      <span>Sep 2025 &ndash; Present</span>
+      <p>Sharing the stories of the Cesium open-source community.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Freelance Editor</h3>
+      <span>May 2014 &ndash; Present</span>
+      <p>Personal history editor guiding individuals through self-publishing their life stories; also edits for academic, business, and fiction clients.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Communications Editor, Cesium GS / AGI</h3>
+      <span>Jul 2015 &ndash; Sep 2024</span>
+      <p>Managed social channels, drafted blog and web content, and wrote technical and business documents for the Cesium open-source community.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Associate Acquisitions Editor, CRC Press</h3>
+      <span>Sep 2010 &ndash; May 2014</span>
+      <p>Acquired and developed titles for computer graphics and visualization book lists; signed 24 books and assisted development of 48 more.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>English Instructor, Brigham Young University</h3>
+      <span>Aug 2007 &ndash; Aug 2009</span>
+      <p>Taught Freshman English: Writing and Rhetoric, and served as a teaching assistant for editing and publishing courses.</p>
+    </div>
+    <div class="edu-box">
+      <h4>Master of Arts, English &mdash; Brigham Young University</h4>
+      <p>2007 &ndash; 2009 &middot; 4.0 GPA</p>
+      <h4>Bachelor of Arts, English &mdash; Brigham Young University</h4>
+      <p>2001 &ndash; 2007 &middot; 3.96 GPA &middot; Graduated Magna Cum Laude</p>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <h2 class="section-title">Have a Story to Tell?</h2>
+    <p>Whether it's a personal history, a manuscript, or a technical document, I'd love to help you tell it well.</p>
+    <a href="contact.html" class="btn">Contact Sarah</a>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-links">
+      <a href="biography.html">Biographies</a>
+      <a href="professional.html">Professional</a>
+      <a href="entertainment.html">Entertainment</a>
+      <a href="inspirational.html">Inspirational</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2026 Sarah Chow &middot; Editor &amp; Writer</p>
+  </div>
+</footer>
+
+</body>
+</html>
