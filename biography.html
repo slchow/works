@@ -56,6 +56,21 @@ section{padding:70px 0;}
 .cover-thumb .mag-name{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:.78rem;line-height:1.05;}
 .cover-thumb .mag-date{font-size:.55rem;letter-spacing:.3px;text-transform:uppercase;opacity:.9;}
 
+.cover-thumb.has-image {
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    background: none;
+}
+
+.cover-thumb.has-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 4px;
+}
+
 .insp-body{flex:1;min-width:0;}
 .insp-body h3{font-size:1.05rem;color:var(--navy);margin-bottom:4px;line-height:1.3;font-family:'Playfair Display',serif;}
 .insp-type{font-size:.76rem;color:var(--muted);font-style:italic;display:block;margin-bottom:2px;}
@@ -100,7 +115,7 @@ footer p{font-size:.85rem;color:#8a97a4;}
 <section class="page-hero">
   <div class="container">
     <h1>Biographies</h1>
-    <p>Personal histories, memoirs, and autobiographies Sarah has edited, designed, and helped bring to print &mdash; for individuals and families preserving their stories for generations to come.</p>
+    <p>I help individuals self publish personal histories, memoirs, and family remembrances.</p>
   </div>
 </section>
 
@@ -127,21 +142,32 @@ footer p{font-size:.85rem;color:#8a97a4;}
       <div class="process-step">
         <span class="step-num">4</span>
         <h3>Publishing</h3>
-        <p>Sarah requests a quote from the publisher and submits the files for printing.</p>
+        <p>Sarah requests a quote from the printer and submits the files for printing.</p>
       </div>
     </div>
-    <p class="process-note">Once your story is printed, Sarah can also help you plan additional copies, list it for sale, or share it through free archives like FamilySearch Memories &mdash; and can put together an ebook edition for wider distribution.</p>
+    <p class="process-note">Once your story is printed, Sarah can also help you plan additional copies, list it for sale, or share it through free archives like FamilySearch Memories, and can put together an ebook edition for wider distribution.</p>
   </div>
 </section>
 
 <section style="background:var(--cream);">
   <div class="container">
     <h2 class="section-title">Past Projects</h2>
-    <p class="section-intro">These projects are shared for illustrative purposes. Most were privately printed for family use; where a title is publicly available, it's linked below.</p>
     <div class="insp-grid">
-
+      
       <div class="insp-card">
-        <div class="cover-thumb"><span class="mag-name">Memoir</span><span class="mag-date">2025</span></div>
+        <div class="cover-thumb has-image"><img src="images/KidsQuotes" alt="Kids Quotes book cover"></div>  
+        <div class="insp-body">
+          <span class="insp-type">Collection of family quotations</span>
+          <h3>Kids Quotes</h3>
+          <span class="insp-meta">2026</span>
+          <p class="insp-desc">Collected, edited, formatted, and self-published this collection covering a decade of family quotes.</p>
+          <span class="no-link">Privately printed &middot; not available online</span>   
+         </div>
+      </div>
+        
+        
+      <div class="insp-card">
+        <div class="cover-thumb has-image"><img src="images/CalloftheWild.png" alt="Answering the Call of the Wild book cover"></div>  
         <div class="insp-body">
           <span class="insp-type">Memoir by Paul Luczak</span>
           <h3>Answering the Call of the Wild: In the Mountains, on the Sea, and in the Schoolhouse</h3>
@@ -152,56 +178,56 @@ footer p{font-size:.85rem;color:#8a97a4;}
       </div>
 
       <div class="insp-card">
-        <div class="cover-thumb"><span class="mag-name">Family</span><span class="mag-date">2020</span></div>
+        <div class="cover-thumb has-image"><img src="images/AsYouRemember.JPG" alt="As You Remember book cover"></div>
         <div class="insp-body">
           <span class="insp-type">Family History &middot; Bob &amp; Tina Cutler</span>
           <h3>As You Remember</h3>
           <span class="insp-meta">2020</span>
-          <p class="insp-desc">Invited contributing authors, provided writing prompts, wrote articles, copyedited, and formatted this collection of remembrances. Arranged publishing of the 80-page book, 10 copies.</p>
+          <p class="insp-desc">Invited contributing authors, provided writing prompts, wrote articles, copyedited, and formatted this collection of remembrances. Arranged publishing of the 80-page book.</p>
           <span class="no-link">Privately printed &middot; not available online</span>
         </div>
       </div>
 
       <div class="insp-card">
-        <div class="cover-thumb"><span class="mag-name">Memoir</span><span class="mag-date">2018</span></div>
+        <div class="cover-thumb has-image"><img src="images/Karen.JPG" alt="Mothers Don't Get Sick Leave book cover"></div>
         <div class="insp-body">
           <span class="insp-type">Karen Christenson</span>
           <h3>Mothers Don't Get Sick Leave</h3>
           <span class="insp-meta">2018</span>
-          <p class="insp-desc">Copyedited and formatted remembrances contributed by Karen Christenson's children. Arranged self-publishing of the 70-page book.</p>
+          <p class="insp-desc">Copyedited and formatted remembrances contributed by family members. Arranged self-publishing of the 70-page book.</p>
           <span class="no-link">Privately printed &middot; not available online</span>
         </div>
       </div>
 
       <div class="insp-card">
-        <div class="cover-thumb"><span class="mag-name">Life<br>History</span><span class="mag-date">2013&ndash;14</span></div>
+        <div class="cover-thumb has-image"><img src="images/Vernon.JPG" alt="Vernon Romney book cover"></div>
         <div class="insp-body">
           <span class="insp-type">Vernon Romney, Sr.</span>
           <h3>The Life History of Vernon Romney, Sr.</h3>
           <span class="insp-meta">2013&ndash;2014</span>
-          <p class="insp-desc">Collected materials and developed the manuscript, then designed and laid out the 140-page book in Adobe InDesign. Arranged proofs and orders with 8 separate branches of the family.</p>
+          <p class="insp-desc">Collected materials, developed the manuscript, then designed, formatted, and arranged printing and orders with 8 separate branches of the family.</p>
           <span class="no-link">Privately printed &middot; not available online</span>
         </div>
       </div>
 
       <div class="insp-card">
-        <div class="cover-thumb"><span class="mag-name">Autobio.</span><span class="mag-date">2011</span></div>
+        <div class="cover-thumb has-image"><img src="images/Bevan.JPG" alt="bevan Mortensen book cover"></div>
         <div class="insp-body">
           <span class="insp-type">Bevan Mortensen</span>
           <h3>Bevan Mortensen: An Autobiography</h3>
           <span class="insp-meta">2011</span>
-          <p class="insp-desc">Copyedited the manuscript and designed the 348-page interior and cover in Adobe InDesign. Arranged self-publishing of the first print run of 100 copies.</p>
+          <p class="insp-desc">Copyedited and formatted the 348-page book and arranged for self publishing.</p>
           <span class="no-link">Privately printed &middot; not available online</span>
         </div>
       </div>
 
       <div class="insp-card">
-        <div class="cover-thumb"><span class="mag-name">Autobio.</span><span class="mag-date">2010&ndash;11</span></div>
+        <div class="cover-thumb has-image"><img src="images/YaleAve.JPG" alt="Vernon Romney book cover"></div>
         <div class="insp-body">
           <span class="insp-type">Vernon Romney</span>
-          <h3>Vernon Romney: An Autobiography</h3>
+          <h3>Yale Avenue Kid: Vernon Bradford Romney</h3>
           <span class="insp-meta">2010&ndash;2011</span>
-          <p class="insp-desc">Copyedited the manuscript and designed the 422-page interior and cover in Adobe InDesign. Arranged self-publishing of 100 copies.</p>
+          <p class="insp-desc">Copyedited, designed, and arranged for self publishing of the 422-page book.</p>
           <span class="no-link">Privately printed &middot; not available online</span>
         </div>
       </div>
@@ -218,12 +244,12 @@ footer p{font-size:.85rem;color:#8a97a4;}
       </div>
 
       <div class="insp-card">
-        <div class="cover-thumb"><span class="mag-name">Autobio.</span><span class="mag-date">2007&ndash;09</span></div>
+        <div class="cover-thumb has-image"><img src="images/Beverly.JPG" alt="Beverly Cutler book cover"></div>
         <div class="insp-body">
           <span class="insp-type">Beverly Cutler</span>
-          <h3>Beverly Cutler: An Autobiography</h3>
+          <h3>Beverly Romney Cutler: An Autobiography</h3>
           <span class="insp-meta">2007&ndash;2009</span>
-          <p class="insp-desc">Copyedited and reorganized the manuscript from 334,000 to 303,000 words, dividing it into 25 chapters and 12 appendices with new prefaces. Designed the 354-page book in Adobe InDesign and arranged self-publishing of 50 copies.</p>
+          <p class="insp-desc">Provided significant substantive editing, photo scanning, and image corrections, in addition to copyediting and formatting the manuscript. Arranged self-publishing of the 354-page book.</p>
           <span class="no-link">Privately printed &middot; not available online</span>
         </div>
       </div>
