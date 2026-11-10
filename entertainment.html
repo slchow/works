@@ -48,6 +48,21 @@ section{padding:70px 0;}
 .cover-thumb .mag-name{font-family:'Playfair Display',serif;font-style:italic;font-weight:700;font-size:.8rem;line-height:1.05;}
 .cover-thumb .mag-date{font-size:.55rem;letter-spacing:.3px;text-transform:uppercase;opacity:.9;}
 
+.cover-thumb.has-image {
+    padding: 0;
+    display: block;
+    overflow: hidden;
+    background: none;
+}
+
+.cover-thumb.has-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: 4px;
+}
+
 .insp-body{flex:1;min-width:0;}
 .insp-body h3{font-size:1.05rem;color:var(--navy);margin-bottom:4px;line-height:1.3;font-family:'Playfair Display',serif;}
 .insp-type{font-size:.76rem;color:var(--muted);font-style:italic;display:block;margin-bottom:2px;}
@@ -125,7 +140,7 @@ footer p{font-size:.85rem;color:#8a97a4;}
       </div>
 
       <div class="insp-card">
-        <div class="cover-thumb"><span class="mag-name">Unspun</span><span class="mag-date">2018</span></div>
+        <div class="cover-thumb has-image"><img src="images/unspun.jpg" alt="Unspun book cover"></div>
         <div class="insp-body">
           <span class="insp-type">Short Story</span>
           <h3>Tsar Vislav, Tsarina Vislav, and the Firebird</h3>
